@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>RPG Pixel Art</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+  <br>
+  <a href="index2.html">
+  <button class="menu">Menu</button>
+</a>
+  <div id="class-selection">
+    <h2>Escolha sua classe</h2>
+    <button onclick="startGame('mago')">Mago</button>
+    <button onclick="startGame('assassino')">Assassino</button>
+  </div>
+  <div id="tela-vitoria" style="display: none;">
+  <div class="vitoria-container">
+    <h1>🎉 Você Derrotou o Senhor do Abismo! 🎉</h1>
+    <p>O mundo está salvo… por enquanto.</p>
+    <button onclick="location.reload()">Jogar Novamente</button>
+  </div>
+</div>
+<div id="como-jogar" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+     background-color: black; color: white; padding: 40px; font-family: sans-serif; overflow-y: auto; z-index: 10;">
+  <h1>🎮 Como Jogar</h1>
+  <p>Embarque em uma jornada sombria por 12 fases repletas de criaturas macabras. Escolha entre <strong>Mago</strong> ou <strong>Assassino</strong> e derrote inimigos para avançar até o chefe final.</p>
+
+  <h2>🕹️ Controles</h2>
+  <ul>
+    <li><strong>W / A / S / D</strong> – Mover personagem</li>
+    <li><strong>Botão esquerdo do mouse</strong> – Ataque básico</li>
+    <li><strong>Botão direito do mouse</strong> – Usar habilidade especial</li>
+    <li><strong>Mouse</strong> – Mira</li>
+  </ul>
+
+  <h2>🧙‍♂️ Classes</h2>
+  <h3>Mago</h3>
+  <ul>
+    <li>Ataque à distância com magia</li>
+    <li>Habilidade: Bola de fogo com alto dano</li>
+  </ul>
+
+  <h3>🥷Assassino</h3>
+  <ul>
+    <li>Ataque corpo a corpo</li>
+    <li>Habilidade: Fica invisível e executa inimigos fracos pelas costas</li>
+  </ul>
+
+  <h2>👹 Objetivo</h2>
+  <ul>
+    <li>Mate todos os inimigos para abrir a porta</li>
+    <li>Passar pela porta leva você à próxima fase e restaura sua vida</li>
+    <li>Fases 3, 6, 9 e 12 têm chefes mais fortes</li>
+  </ul>
+
+  <button onclick="fecharInstrucoes()" style="padding: 12px 24px; font-size: 16px; margin-top: 30px;">Começar</button>
+</div>
+<div id="class-selection" style="display: none; margin-top: 100px; text-align: center;">
+  <h2>Escolha sua classe</h2>
+  <button onclick="startGame('mago')">🧙 Mago</button>
+  <button onclick="startGame('assassino')">🗡️ Assassino</button>
+</div>
+
+  <canvas id="gameCanvas" width="1200" height="725"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>

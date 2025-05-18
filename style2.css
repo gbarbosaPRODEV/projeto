@@ -1,0 +1,34 @@
+body {
+background-image: url(imagens/tela.png);
+width: 100%;
+height: 100%;
+background-size: 100%;
+background-repeat: no-repeat;
+  }
+
+.botao {
+position: fixed;
+top: 30px;
+left: 70%;
+display: flex;
+gap: 40px;
+  }
+
+button {
+background: #000000;
+color: white;
+padding: 15px 40px;
+font-size: 18px;
+border-radius: 8px;
+  }
+
+button:hover {
+background: #220566;
+  }
+
+h1 {
+position: fixed;
+display: flex;
+top: 30%;
+color: white;
+  }
